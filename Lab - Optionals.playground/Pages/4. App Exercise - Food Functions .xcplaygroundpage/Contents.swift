@@ -29,7 +29,7 @@ print(unpackMeal("Breakfast"))
  */
 func findMealLogs()->[String: Any]?{
     if UserDefaults.standard.dictionary(forKey: "mealLog") != nil{
-        return [String: Any]?
+        return UserDefaults.standard.dictionary(forKey: "mealLog")
     }else{
         return nil
     }
